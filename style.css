@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    background-image: url(background.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(102, 93, 93, 0.74);
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border: solid 5px rgb(119, 113, 113);
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-right: 3px;
+    max-width: 100%;
+}
+
+.head {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: 800;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.head-nav {
+    text-decoration: none;
+}
+
+.web-head {
+    background-color: #1A1A1A;
+    max-width: 50%;
+    margin-top: 15%;
+    padding: 2%;
+    border: 4px double;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(45deg, #FFD700, #FFA500);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+}
+	
+
+.umar {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.aboutme {
+    color: #CCCCCC;
+    line-height: 1.6;
+}
+
+.web-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.head {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.head::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    transition: width 0.3s ease;
+}
+
+.head:hover::after {
+    width: 100%;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(22), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+
+
+@media (max-width:760px) {
+
+
+    .name {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .web-head {
+        max-width: 90%;
+        margin-top: 20%;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .aboutme {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .umar {
+        font-size: 18px;
+    }
+}
